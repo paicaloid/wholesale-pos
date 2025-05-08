@@ -9,6 +9,6 @@ type Product struct {
 	Description string  `json:"description"`
 	CostPrice   float64 `json:"cost_price"`
 	SalePrice   float64 `json:"sale_price"`
-	Quantity    uint
-	CategoryID  uint
+	Quantity    uint    `json:"quantity"`
+	CategoryID  uint    `json:"category_id"`
 }
