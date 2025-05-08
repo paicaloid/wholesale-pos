@@ -2,6 +2,7 @@ package adapters
 
 import (
 	"wholesale-pos/internal/domain"
+	"wholesale-pos/internal/ports"
 
 	"gorm.io/gorm"
 )
@@ -10,7 +11,7 @@ type GormProductRepository struct {
 	db *gorm.DB
 }
 
-func NewGormProductRepository(db *gorm.DB) domain.ProductRepository {
+func NewGormProductRepository(db *gorm.DB) ports.ProductRepository {
 	return &GormProductRepository{db: db}
 }
 
